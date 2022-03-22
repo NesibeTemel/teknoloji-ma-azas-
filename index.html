@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teknoloji Mağazası</title>
+</head>
+<body>
+    <h3>Teknolji Mağazası</h3>
+    <form action="#" id="teknoloji">
+        <label for="kategori">Ürün kategorileri:</label>
+        <label for="kategoriEv">EV Aletleri</label>
+        <input type="radio" name="kategori" id="kategoriEv">
+        <label for="kategoriTekno"> Teknoloji Aletleri</label>
+        <input type="radio" name="kategori" id="kategoriTekno">
+        <label for="kategoriGamer">Gamer Aletleri</label>
+        <input type="radio" name="kategori" id="kategoriGamer">
+        <br>
+        <div id="urunPanel">
+            <label for="urunler">Ürün seçimi yapınız:</label>
+        </div>
+        <br>
+        <input type="button" value="Ekle" id="btnEkle" onclick="ekle()">
+        <br>
+        <select name="sepet" id="sepetMarket" size="10">
+            <option value="0">Seçtiğiniz ürünler</option>
+        </select>
+        <button id="btnCikar">Çıkar</button>
+        <h4 id="tutar"></h4>
+        <label for="indirim">İndirim kodu:</label>
+        <input type="text" name="indirim" id="txtIndirim">
+        <input type="button" value="Kontrol Et Ve Öde" id="btnTamamla">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
